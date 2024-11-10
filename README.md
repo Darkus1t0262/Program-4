@@ -1,5 +1,4 @@
 # Program-4
-# Program-4
 
 ## Overview
 This project contains a Go program named `Multiplier.go` that multiplies two numbers entered by the user. The program can be run locally or inside a Docker container.
