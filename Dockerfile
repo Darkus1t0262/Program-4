@@ -1,14 +1,14 @@
-# Use the official Golang image as the base image
-FROM golang:1.20
+# Usa una imagen oficial de Go con la versión 1.23.3
+FROM golang:1.23.3
 
-# Set the working directory in the container
+# Establece el directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copy the Go program file from the GoProgram folder into the container
+# Copia el archivo Go desde la carpeta GoProgram al contenedor
 COPY GoProgram/Multiplier.go ./
 
-# Build the Go program
+# Construye el programa Go
 RUN go build -o multiplier Multiplier.go
 
-# Specify the command to run the executable
+# Especifica el comando para ejecutar el ejecutable
 CMD ["./multiplier"]
