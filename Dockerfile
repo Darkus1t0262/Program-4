@@ -4,8 +4,8 @@ FROM golang:1.20
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the Go program file into the container
-COPY Multiplier.go .
+# Copy the Go program file from the GoProgram folder into the container
+COPY GoProgram/Multiplier.go ./
 
 # Build the Go program
 RUN go build -o multiplier Multiplier.go
