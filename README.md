@@ -23,9 +23,13 @@ Run the Program:
 go run Multiplier.go
 
 Running with Docker
+cd C:\Users\josue\Documents\GitHub\Program-4
 
 Build the Docker Image:
 docker build -t go-multiplier .
 
 Run the Docker Container:
 docker run -it go-multiplier
+
+Download Image from DockerHub
+docker run -p 100:100 --name go_multiplier darkjus/program-4
